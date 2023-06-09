@@ -1,0 +1,36 @@
+footer {
+    width: 100%;
+    background: #01011F;
+    color: #fff;
+    padding: 24px 0;
+    .info {
+        text-align: center;
+        h3 {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 49px;
+        }
+        .social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                font-size: 14px;
+                margin: 0;
+            }
+            div {
+                img {
+                    margin-right: 12px;
+                    cursor: pointer;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.main {
+    margin-bottom: 74px;
+    position: relative;
+    z-index: 10;
+    margin-top: -90px;
+    @media screen and (max-width: 885px){
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    .titleWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        p {
+            font-weight: 400;
+        }
+        button {
+            cursor: pointer;
+            font-size: 16px;
+            background: transparent;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+    .gameWrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        @media screen and (max-width: 885px) {
+            flex-direction: column;
+        }
+        .leftWrapper {
+            width: 49%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @media screen and (max-width: 885px) {
+                width: 100%;
+                justify-content: center;
+                gap: 16px;
+            }
+            .gameCard {
+                margin-bottom: 16px;
+                border-radius: 16px;
+                cursor: pointer;
+                h3 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 12px;
+                    opacity: 0.5;
+                }
+                &:hover {
+                    h3 {
+                        color: #4870ff;
+                    }
+                }
+            }
+        }
+        .rightWrapper {
+            width: 49%;
+            @media screen and (max-width: 885px) {
+                width: 100%;
+            }
+            .rightWrapperTop {
+                display: flex;
+                justify-content: space-between;
+                .gameCard {
+                    width: 49%;
+                    margin-bottom: 16px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .gameCard {
+                width: 100%;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 12px;
+                    opacity: 0.5;
+                }
+                &:hover {
+                    h3 {
+                        color: #4870ff;
+                    }
+                }
+            }
+        }
+    }
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        width: 62%;
+        @media screen and (max-width: 885px){
+            width: 100%;
+        }
+    }
+}

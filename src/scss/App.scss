@@ -1,0 +1,92 @@
+@import './fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+}
+html {
+    background: #050d2a;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: #fff;
+    
+}
+
+// .bg_hero {
+//     width: 100%;
+//     height: 746px;
+//     position: relative;
+
+//     background: url('../assets/img/bg_hero.png') no-repeat center/cover;
+// }
+// .bg_main {
+//     width: 100%;
+//     margin-top: -90px;
+//     background: url('../assets/img/bg_main.jpeg') no-repeat bottom/cover;
+// }
+// .bg_hero {
+//     width: 100%;
+
+//     position: relative;
+
+//     &::before {
+//         content: '';
+//         position: absolute; /* Фиксируем на одном месте */
+//         left: 0;
+//         right: 0; /* Вся ширин */
+//         top: 0;
+//         bottom: 0; /* Вся высота */
+//         z-index: -1; /* Фон ниже текста */
+//         /* Параметры фона */
+//         background: url('../assets/img/bg_hero.png') no-repeat center/cover;
+//         opacity: 0.6;
+//     }
+// }
+
+.bg_hero {
+    width: 100%;
+    height: 746px;
+    position: relative;
+    z-index: 9;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        background: url('../assets/img/bg_hero.png') no-repeat center/cover;
+        opacity: 0.6;
+    }
+    @media screen and (max-width: 885px){
+        height: auto;
+    }
+}
+.bg_main {
+    position: relative;
+    width: 100%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        background: url('../assets/img/bg_main.jpeg') no-repeat bottom/cover;
+        opacity: 0.6;
+    }
+}
